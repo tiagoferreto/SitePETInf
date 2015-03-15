@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="PT-BR">
+	<head>
+		<meta charset="UTF-8">
+		<!-- Adaptar a resolucao de dispositivos -->
+		<meta name="viewport" content="initial scale=1.0">
+		<title>PUCRS | PET Informática</title>
+		<!-- Icone da aba -->
+		<link href="imagens/favicon2.png" rel="shortcut icon" type="image/x-icon">
+		<!-- Fonte usada. Google Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'>
+		<!-- Referencia ao CSS -->
+		<link href="default.css" rel="stylesheet" type="text/css" media="all">
+		
+<script language="JavaScript1.2">
+	var howOften = 6; //numero de segundos para rotação
+	var current = 0; //contador da imagem
+	var ns6 = document.getElementById&&!document.all; //detect netscape 6
+
+	// arreio de imagens para serem rotacionadas
+	var items = new Array();
+    	items[0]="<a href='link.htm' ><img alt='image0 (9K)' src='imagens/capa/banner.png' width='1000' height='350' border='0' /></a>"; //a linked image
+    	items[1]="<a href='link.htm'><img alt='image1 (9K)' src='imagens/capa/numeros_terminal.png' height='350' width='1000' border='0' /></a>"; //a linked image
+    	items[2]="<a href='link.htm'><img alt='image2 (9K)' src='imagens/capa/canecas.png' height='350' width='1000' border='0' /></a>"; //a linked image
+    	items[3]="<a href='link.htm'><img alt='image3 (9K)' src='imagens/capa/livros.png' height='350' width='1000' border='0' /></a>"; //a linked image
+    	items[4]="<a href='link.htm'><img alt='image4 (9K)' src='imagens/capa/trabalhando.png' height='350' width='1000' border='0' /></a>"; //a linked image
+	function rotater() {
+    	document.getElementById("placeholder").innerHTML = items[current];
+    	current = (current==items.length-1) ? 0 : current + 1;
+    	setTimeout("rotater()",howOften*1000);
+	}
+
+	function rotater() {
+    	if(document.layers) {
+        	document.placeholderlayer.document.write(items[current]);
+        	document.placeholderlayer.document.close();
+    	}
+    	if(ns6)document.getElementById("placeholderdiv").innerHTML=items[current]
+        	if(document.all)
+            	placeholderdiv.innerHTML=items[current];
+
+    	current = (current==items.length-1) ? 0 : current + 1; //increment or reset
+    	setTimeout("rotater()",howOften*1000);
+	}
+	window.onload=rotater;
+	//-->
+</script>
+	</head>
+	<body>
+		<div id="actualbody">
+		<!-- Cabecalho da pagina -->
+		<header>
+			<layer id="placeholderlayer"></layer><div id="placeholderdiv"></div>
+			<div id="titulo">
+				<h1>PET Informática</h1>
+				<p>Programa de Educação Tutorial da Faculdade de Informática da PUCRS</p>
+			</div>
+			<div id="titulo_sombra">
+				<h1>PET Informática</h1>
+				<p>Programa de Educação Tutorial da Faculdade de Informática da PUCRS</p>
+			</div>
+			<!-- Menu de navegacao -->
+			<div id="menu">
+				<nav>
+					<ul>
+						<li class="menu_outro"><a href="inicio.html">Página Inicial</a></li>
+						<li class="menu_outro"><a href="sobre.html">&nbsp;&nbsp;&nbsp;Sobre&nbsp;&nbsp;&nbsp;</a></li>
+						<li class="menu_atual"><a href="integrantes.html">&nbsp;Integrantes&nbsp;</a></li>
+						<li class="menu_outro"><a href="atividades.html">&nbsp;Atividades&nbsp;</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section>
+			<h2>Integrantes do PET</h2>
+			<div id="gustavo_francisco">
+				<div class="integrantes">
+					<article>
+						<img src="imagens/integrantes/gustavo_francisco.png" width="100" height="120">
+						<div class="integrantes_texto">
+							<h3>Gustavo Francisco</h3>
+							<div class="integrantes_curso">
+								<em>Engenharia de Computação</em>
+							</div>
+							<p>Na PUCRS desde 2014/1
+							<br>No PET-Inf desde 2014/2
+							<br>gustavo.francisco@acad.pucrs.br</p>
+						</div>
+					</article>
+				</div>
+			</div>	
+			<div id="helio_fuques">
+				<div class="integrantes">
+					<article>
+						<img src="imagens/integrantes/helio_fuques.png" width="100" height="120">
+						<div class="integrantes_texto">
+							<h3>Hélio Fuques</h3>
+							<div class="integrantes_curso">
+								<em>Engenharia de Computação</em>
+							</div>
+							<p>Na PUCRS desde 2014/2
+							<br>No PET-Inf desde 2014/2
+							<br>helio.fuques@acad.pucrs.br</p>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div id="joao_fanti">
+				<div class="integrantes">
+					<article>
+						<img src="imagens/integrantes/joao_fanti.png" width="100" height="120">
+						<div class="integrantes_texto">
+							<h3>João Fanti</h3>
+							<div class="integrantes_curso">
+								<em>Ciência da Computação</em>
+							</div>
+							<p>Na PUCRS desde 2014/1
+							<br>No PET-Inf desde 2014/2
+							<br>joao.otavio@acad.pucrs.br</p>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div id="joice_marek">
+			<div class="integrantes">
+				<article>
+					<img src="imagens/integrantes/joice_marek.png" width="100" height="120">
+					<div class="integrantes_texto">
+							<h3>Joice Marek</h3>
+							<div class="integrantes_curso">
+								<em>Engenharia de Computação</em>
+							</div>
+							<p>Na PUCRS desde 2014/1
+							<br>No PET-Inf desde 2014/2
+							<br>joice.marek@acad.pucrs.br</p>
+					</div>
+				</article>
+				</div>
+			</div>
+			<div id="paola_weirich">
+				<div class="integrantes">
+					<article>
+						<img src="imagens/integrantes/paola_weirich.png" width="100" height="120">
+						<div class="integrantes_texto">
+							<h3>Paola Weirich</h3>
+							<div class="integrantes_curso">
+								<em>Ciência da Computação</em>
+							</div>
+							<p>Na PUCRS desde 2014/1
+							<br>No PET-Inf desde 2014/2
+							<br>paola.weirich@acad.pucrs.br</p>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div id="pedro_berta">
+				<div class="integrantes">
+					<article>
+						<img src="imagens/integrantes/pedro_berta.png" width="100" height="120">
+						<div class="integrantes_texto">
+							<h3>Pedro Berta</h3>
+							<div class="integrantes_curso">
+								<em>Ciência da Computação</em>
+							</div>
+							<p>Na PUCRS desde 2014/1
+							<br>No PET-Inf desde 2014/1
+							<br>pedro.antonio@acad.pucrs.br</p>
+						</div>
+					</article>
+				</div>
+			</div>
+			<article class="ex_integrantes">
+				<h2>Ex-integrantes</h2>
+					<h3>2015</h3>
+						<p>Felipe Angnes (2013/2 - 2015/1)
+						<br>Guilherme Quadros (2014/2 - 2015/1)
+						</p>
+					<h3>2014</h3>
+						<p>Vinicius Blembeel (2014/2 - 2014/2)
+						<br>Lucio Franco (2014/1 - 2014/2)
+						<br>Bruno Costa (2014/1 - 2014/2)
+						<br>Fabricio Cordella (2014/1 - 2014/2)
+						<br>Marcos Ilha (2014/1 - 2014/1)
+						<br>Julia de Lemos (2014/1 - 2014/2)
+						<br>Julia Arone (2014/1 - 2014/2)
+						<br>Renata Soria (2014/1 - 2014/2)
+						<br>Wendell de Lacerda (2014/1 - 2014/2)
+						</p>
+					<h3>2013</h3>
+						<p>Alonso Gonçalves (2013/1 - 2013/2)
+						<br>Priscila Vivian (2013/1 - 2014/2) 
+						<br>Bruno Bulso (2013/1 - 2013/2)
+						<br>Carolina Nery (2013/1 - 2013/2)
+						<br>Darlan Jurak (2013/2 - 2013/2)
+						<br>Lucas Carletti (2013/1 - 2013/2)
+						<br>Pedro Gyrão (2013/2 - 2014/1)
+						<br>Ricardo Sabedra (2013/1 - 2013/2)
+						<br>Ygor Leite (2013/1 - 2013/2)</p>
+					<h3>2012</h3>
+						<p>Douglas Nietzke (2012/2 - 2013/1)
+						<br>Fabricio Sffair (2012/2 - 2013/2)
+						<br>Gabriel Beck (2012/1 - 2012/2)
+						<br>Gustavo Vacilotto (2012/1 - 2014/1)
+						<br>Jovani Brasil (2012/2 - 2012/2)
+						<br>Lucas Batista (2012/1 - 2013/1)
+						<br>Lucas Mior (2012/2 - 2013/2)
+						<br>Rafael Furtado (2012/1 - 2013/2)
+						<br>Rodrigo Cecin (2012/1 - 2012/2)
+						<br>Tanara Bodini (2012/2 - 2012/2)
+						<br>Thiago Subilhaga (2012/2 - 2013/2)</p>
+					<h3>2011</h3>
+						<p>Eduardo Jaeger (2011/1 - 2012/1)
+						<br>Gabriel Kryvoruchca (2011/2 - 2012/1)
+						<br>Giovane Preczeski (2011/2 - 2013/1)
+						<br>Jeferson da Silva (2011/2 - 2012/1)
+						<br>Lucian de Oliveira (2011/2 - 2012/1)
+						<br>Tiago Ortiz (2011/2 - 2012/1)</p>
+					<h3>2009</h3>
+						<p>Augusto Mengarda (2009/1 - 2009/2)
+						<br>Diego Molina (2009/1 - 2009/2)
+						<br>João Pinto (2009/1 - 2009/1)
+						<br>Leonardo Peres (2009/1 - 2009/2)
+						<br>Luiz Gemelli (2009/2 - 2009/2)
+						<br>Matheus Boesing (2009/2 - 2009/2)
+						<br>Matheus Gibiluka (2009/2 - 2009/2)
+						<br>Murilio Arantes (2009/1 - 2009/2)
+						<br>Nathalia Mercio (2009/1 - 2009/1)
+						<br>Nelson Terra (2009/2 - 2009/2)
+						<br>Rodrigo Chamun (2009/2 - 2009/2)</p>
+					<h3>2008</h3>
+						<p>Bruno Simão (2008/1 - 2008/2)
+						<br>Douglas Cardoso (2008/2 - 2009/2)
+						<br>Felipe Christmann (2008/1 - 2010/1)
+						<br>Fernando Nos (2008/2 - 2009/1)
+						<br>Guilherme Medeiros (2008/1 - 2008/1)
+						<br>Ismael Heinen (2008/2 - 2009/1)
+						<br>Juliano Franz (2008/1 - 2008/2)
+						<br>Karyne Ignácio (2008/2 - 2009/1)
+						<br>Marco Martins (2008/1 - 2009/1)
+						<br>Matheus Oleiro (2008/1 - 2008/2)
+						<br>Paulo Cesar (2008/2 - 2012/2)
+						<br>Rodrigo Moraes (2008/2 - 2009/2)
+						<br>Tiago Jost (2008/1 - 2009/1)
+						<br>Vivian Silveira (2008/1 - 2009/1)</p>
+					<h3>2007</h3>
+						<p>Bruno Visioli (2007/1 - 2007/2)
+						<br>Daiane Fraga (2007/2 - 2008/2)
+						<br>Roberto Oliveira (2007/2 - 2008/2)
+						<br>Rodrigo Gobbi (2007/1 - 2008/1)
+						<br>Yan Ghidini (2007/1 - 2008/1)</p>
+					<h3>2006</h3>
+						<p>Bruno Fernandes (2006/1 - 2007/2)
+						<br>Cezar Reinbrecht (2006/1 - 2008/1
+						<br>Cíntia Pasini (2006/2 - 2007/2)
+						<br>Diones Rossetto (2006/2 - 2008/1)
+						<br>Fernando Furlan (2006/2 - 2007/1)
+						<br>Francis Gobbi (2006/2 - 2008/1)
+						<br>Marcos Rodrigues (2006/2 - 2007/1)
+						<br>Tiago Cunha (2006/2 - 2008/2)</p>
+					<h3>2005</h3>
+						<p>Anderson Soares (2005/2 - 2006/2)
+						<br>Betina Piccoli (2005/2 - 2006/1)
+						<br>Cintia Martins (2005/1 - 2006/2)
+						<br>Elder Bernardi (2005/2 - 2006/2)
+						<br>Gerson Scartezzini (2005/2 - 2008/1)
+						<br>Oscar Albrecht (2005/2 - 2006/1)
+						<br>Rodrigo Wilkens (2005/2 - 2008/2)
+						<br>Tiago Noronha (2005/2 - 2007/2)</p>
+			</article>
+		</section>
+		<footer>
+			<div id ="menu_footer">
+				<nav>
+					<ul>
+						<li>
+							<a href="inicio.html">Página Inicial</a>
+						</li>
+						<li>
+							|
+						</li>
+						<li>
+							<a href="sobre.html">Sobre</a>
+						</li>
+						<li>
+							|
+						</li>
+						<li>
+							<a href="integrantes.html">Integrantes</a>
+						</li>
+						<li>
+							|
+						</li>
+						<li>
+							<a href="atividades.html">Atividades</a>
+						</li>
+						<li> 
+							|
+						</li>
+						<li>
+							<a href="http://www.inf.pucrs.br/">FACIN</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div id="endereco_footer">
+				<p>Av. Ipiranga, 6681 Partenon Porto Alegre/RS CEP: 90619-900 
+					<br>Prédio 32 Sala 701 Fone: (51) 3320-3558 Ramal: 6329
+					<br>© 2014 PET Informática PUCRS</p>
+			</div>
+			<div id="direitos_footer">
+				<p>Os logos e imagens utilizados no design são de propriedades dos seus respectivos donos.<p>
+			</div>
+			<div id="logo_pucrs">
+				<a href="http://pucrs.br/">
+					<img src="imagens/footer_pucrs.png">
+				</a>
+			</div>
+			<div id="social">
+				<ul>
+					<li><a href="https://www.facebook.com/petinf.pucrs"><img src="imagens/footer_facebook.png"></a></li>
+					<li><a href="https://www.youtube.com/user/petinfpucrs"><img src="imagens/footer_youtube.png"></a></li>
+				</ul>
+			</div>
+		</footer>
+		</div>
+	</body>
+</html>

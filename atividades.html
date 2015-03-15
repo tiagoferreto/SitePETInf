@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="PT-BR">
+	<head>
+		<meta charset="UTF-8">
+		<!-- Adaptar a resolucao de dispositivos -->
+		<meta name="viewport" content="initial scale=1.0">
+		<title>PUCRS | PET Informática</title>
+		<!-- Icone da aba -->
+		<link href="imagens/favicon2.png" rel="shortcut icon" type="image/x-icon">
+		<!-- Fonte usada. Google Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'>
+		<!-- Referencia ao CSS -->
+		<link href="default.css" rel="stylesheet" type="text/css" media="all">
+<script language="JavaScript1.2">
+	var howOften = 4; //numero de segundos para rotação
+	var current = 0; //contador da imagem
+	var ns6 = document.getElementById&&!document.all; //detect netscape 6
+
+	// arreio de imagens para serem rotacionadas
+	var items = new Array();
+    	items[0]="<a href='link.htm' ><img alt='image0 (9K)' src='imagens/capa/banner.png' width='1000' height='350' border='0' /></a>"; //a linked image
+    	items[1]="<a href='link.htm'><img alt='image1 (9K)' src='imagens/capa/numeros_terminal.png' height='350' width='1000' border='0' /></a>"; //a linked image
+    	items[2]="<a href='link.htm'><img alt='image2 (9K)' src='imagens/capa/canecas.png' height='350' width='1000' border='0' /></a>"; //a linked image
+    	items[3]="<a href='link.htm'><img alt='image3 (9K)' src='imagens/capa/livros.png' height='350' width='1000' border='0' /></a>"; //a linked image
+    	items[4]="<a href='link.htm'><img alt='image4 (9K)' src='imagens/capa/trabalhando.png' height='350' width='1000' border='0' /></a>"; //a linked image
+	function rotater() {
+    	document.getElementById("placeholder").innerHTML = items[current];
+    	current = (current==items.length-1) ? 0 : current + 1;
+    	setTimeout("rotater()",howOften*1000);
+	}
+
+	function rotater() {
+    	if(document.layers) {
+        	document.placeholderlayer.document.write(items[current]);
+        	document.placeholderlayer.document.close();
+    	}
+    	if(ns6)document.getElementById("placeholderdiv").innerHTML=items[current]
+        	if(document.all)
+            	placeholderdiv.innerHTML=items[current];
+
+    	current = (current==items.length-1) ? 0 : current + 1; //increment or reset
+    	setTimeout("rotater()",howOften*1000);
+	}
+	window.onload=rotater;
+	//-->
+</script>
+</head>
+	<body>
+		<div id="actualbody">
+		<!-- Cabecalho da pagina -->
+		<header>
+			<layer id="placeholderlayer"></layer><div id="placeholderdiv"></div>
+			<div id="titulo">
+				<h1>PET Informática</h1>
+				<p>Programa de Educação Tutorial da Faculdade de Informática da PUCRS</p>
+			</div>
+			<div id="titulo_sombra">
+				<h1>PET Informática</h1>
+				<p>Programa de Educação Tutorial da Faculdade de Informática da PUCRS</p>
+			</div>
+			<!-- Menu de navegacao -->
+			<div id="menu">
+				<nav>
+					<ul>
+						<li class="menu_outro"><a href="inicio.html">Página Inicial</a></li>
+						<li class="menu_outro"><a href="sobre.html">&nbsp;&nbsp;&nbsp;Sobre&nbsp;&nbsp;&nbsp;</a></li>
+						<li class="menu_outro"><a href="integrantes.html">&nbsp;Integrantes&nbsp;</a></li>
+						<li class="menu_atual"><a href="atividades.html">&nbsp;Atividades&nbsp;</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section>
+			<h2>Atividades realizadas pelo PET</h2>
+			<article class="atividade">
+				<div id="nutri_intro">
+					<img src="imagens/atividades/nutri_intro.png" width="750" height="150">
+					<div class="atividade_texto">
+						<h3>NutriMapa</h3>
+						<p>Em maio, o PET Informática começou uma parceria com formandos da nutrição para o desenvolvimento de um aplicativos web: o NutriMapa. O site consiste em mostrar diversos restaurantes e lojas que possuem em seu catálogo comidas saudáveis, comidas específicas para quem possui alguma intolerância ou aderiu uma dieta vegetariana, por exemplo.</p>
+						<p>O desenvolvimento dos projetos começaram em maio e esperamos que em breve estas aplicações sejam lançadas.</p>
+					</div>
+				</div>
+			</article>
+			<article class="atividade">
+				<div id="maio_2014">
+					<img src="imagens/atividades/abr_2014.png" width="750" height="150">
+					<div class="atividade_texto">
+						<h3>Palestras (Maio de 2014)</h3>
+						<p>As palestras realizadas pelo PET Informática no mês de abril serão sobre algoritmos genéticos, aplicativos, jailbreak e root, modelagem em 3D do Google SketchUp, Phoneblocks, realidade virtual e realidade aumentada e Unix.</p>
+						<p>Cada palestra dura em torno de 15 minutos, são ministradas pelos petianos ou pelo tutor, Tiago Ferreto, e têm como objetivo situar os outros alunos no assunto escolhido.</p>
+						<p><b>Algoritmos genéticos</b> são uma técnica de busca utilizada na computação para achar soluções aproximadas em problemas de otimização e busca. São uma classe particular de algoritmos evolutivos que usam técnicas inspiradas pela biologia evolutiva, como hereditariedade, mutação, seleção natural e recombinação (<em>crossing-over</em>). </p>
+						<p><b>Aplicativos, jailbreak e root</b></p>
+						<p><b>O Google SketchUp</b> é uma ferramenta de modelagem 3D, utilizada em diversos campos por ser de fácil manipulação, além de dar ao usuário independência e autonomia na criação do projeto.</p>
+						<p>Já imaginou um celular totalmente customizável e reutilizável? Que quando uma peça estraga não é necessário comprar um novo aparelho, pois pode trocar somente a peça que estragou? Em 2013 essa ideia surgiu: os <b>Phoneblocks</b> – aparelhos celulares com um novo design, onde os componentes têm um formato de blocos encaixáveis a uma placa central. Estragou? Retire o bloco e insira outro, mantendo o resto do celular original.</p>
+						<p><b>Realidade virtual e realidade auementada</b> são formas de mudarmos nossa percepção em relação ao mundo em nossa volta. Com a RV, o usuário pode imergir em um lugar virtualmente, sem estar fisicamente presente nele. E, com a RA, podemos trazer objetos virtuais para o mundo real. A ideia inicial do projeto é de uma nova interface para o usuário, onde a interação do usuário com a tecnologia explora diversos sentidos (como visão, audição, tato, etc.).</p>
+						<p><b>Unix</b></p>
+						<p><b></b></p>
+						<p>Local: sala 516 (FACIN)</p>
+						<p>Horário: 15h</p>
+						<p>Datas: 06/05/14 - 'Aplicativos, jailbreak e root' e 'Algoritmos genéticos'.
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15/05/14 - 'Google SketchUp', 'Phoneblocks', 'Realidade virutal e realidade aumentada' e 'Unix'.</p>
+					</div>
+				</div>
+			</article>
+
+			<article class="atividade">
+				<div id="mar_2014">
+					<img src="imagens/atividades/mar_2014.png" width="750" height="150">
+					<div class="atividade_texto">
+						<h3>Palestras (Março de 2014)</h3>
+						<p>No mês de março e abril, os petianos e o tutor Tiago Ferreto realizaram palestras com os seguintes temas: Bitcoins, Cubli, LaTeX e Redes Virtuais.</p>
+						<p>Foi pesquisado sobre os diversos tipos de criptomoedas, como as <b>Bitcoins</b>, a forma como são geradas e as peculiaridades delas. Além disso, foi analisado a variação de seus valores e a instabilidade do seu preço.</p>
+						<p><b>LaTeX</b> é uma lingaguem de marcação usada para gerar arquivos de texto. Tendo um domínio básico na linguagem fica muito mais simples apenas escrever sobre um assunto, sem se preocupar com a formatação da página e outros detalhes.</p>
+						<p><b>Cubli</b>, um cubo robótico com 15cm de largura, altura e comprimento com capacidade de se equilibrar em seus extremos. Alunos do Institute for Dynamics Systems and Control de Zurich, na Suíça, se dedicaram em produzir esse cubo. Somando alguns conceitos físicos, como inércia, torque e conservação do momento angular, com programação e robótica, eles conseguiram realizar este feito. Algumas pesquisas estão utilizando o conceito do Cubli para auxiliar no equilíbrio de outros robôs.</p>
+						<p><b>Redes virtuais</b></p>
+						<p>Local: PET (palestra fechada)</p>
+						<p>Datas: 18/3/14 - Bitcoins
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1/4/14 - Redes Virtuais
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8/4/14 - Cubli e LaTeX</p>
+					</div>
+				</div>
+			</article>
+			<article class="atividade">
+				<div id="selecao_20141">
+					<img src="imagens/atividades/selecao_20141.png" width="750" height="150">
+					<div class="atividade_texto">
+						<h3>Seleção de novos petianos</h3>
+						<p>O PET está com vagas abertas para quem desejar participar do programa. São 9 bolsas disponíveis para os alunos de graduação dos cursos de Ciência da Computação, Engenharia da Computação e Sistemas de Informação.</p>
+						<p>Para se inscrever, basta mandar um e-mail com: nome, currículo com foto, nome do curso e histórico escolar (com notas). Alunos cursando o primeiro semestre devem enviar uma cópia com as notas do vestibular da PUCRS ou ENEM.</p>
+						<p>Lembrando que, para poder entrar no PET, o aluno não pode estar vinculado a nenhum outro projeto ou estágio (alunos do ProUni podem participar) e deve ter um bom desempenho acadêmico.</p>
+						<p>Carga horária: 20 horas semanais (4 horas por dia). Bolsa mensal: R$400.</p>
+						<p>Nosso e-mail é <em>petinf.pucrs@gmail.com</em>. As inscrições vão até o dia 10/03/2014.</p>
+						<p>Boa sorte!</p>
+					</div>
+				</div>
+			</article>
+			<article class="atividade">
+				<div id="jan_2014">
+					<img src="imagens/atividades/jan_2014.png" width="750" height="150">
+					<div class="atividade_texto">
+						<h3>Palestras (Janeiro de 2014)</h3>
+						<p>A partir de janeiro, o PET estará organizando mini-palestras sobre assuntos diversos relacionados à computação. O primeiro círculo de palestras será sobre: A Internet do Futuro, Introdução a Banco de Dados, Métodos de Ordenação, Phyton aplicado a Raspberry Pi e Vírus.</p>
+						<p><b>A internet do futuro</b></p>
+
+
+						<p><b>Banco de dados</b> são a base de armazenamento da maior parte das informações e dados empresariais. O que você sabe sobre eles? Nessa palestra mostraremos como um Banco de Dados Relacional funciona, quais são seus comandos básicos e suas utilidades no dia a dia.</p>
+						<p><b>Métodos de ordenação</b> são métodos usados na programação para ordenar informações. Há métodos que são mais simples na hora da implementação, porém não possuem um desempenho muito bom. Escolhendo os algoritmos mais conhecidos, será feita a análise em relação a complexidade do código, tempo de execução e número de operações realizadas.</p>
+						<p>Nos últimos anos, grandes empresas têm apoiado e incentivado o ensino de algumas linguagens de programação nas escolas. A linguagem de programação <b>Python</b> foi desenvolvida com o intuito de que qualquer um pudesse aprendera programar. Com o mesmo ideal, Pete Lemos fundou o <b>RaspberryPi</b>, que é considerado o menor e mais barato computador do mundo. Com estas duas ferramentas, escolas do mundo inteiro podem iniciar o ensino de programação para seus alunos.</p>
+						<p>Foi pesquisado sobre os diferentes tipos de <b>malwares</b>, como <em>worms</em>, <em>trojans</em> e <em>spywares</em>. Após a definição de cara tipo de malware, foi feita a análise de um pequeno malware auto-replicante que apenas ocupava espaço na pilha causando lentidão no computador, e a análise de um <em>worm</em> que, quando detectado, danificava os sistemas operacionais da <em>Microsoft</em>.</p>
+						<p>Local: sala 516 (FACIN)</p>
+						<p>Horário: 15h</p>
+						<p>Datas: 9/01/14 - 'Introdução a Banco de Dados', 'Métodos de Ordenação' e 'Vírus'
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16/01/14 - 'Internet do Futuro' e 'Phyton e Raspberry Pi'</p>
+					</div>
+				</div>
+			</article>
+			<article class="atividade">
+				<div id="coding_dojo_2013">
+					<img src="imagens/atividades/coding_dojo_2013.png" width="750" height="150">
+					<div class="atividade_texto">
+						<h3>Coding DOJO</h3>
+						<p>Estaremos realizando uma palestra sobre o funcionamento do Coding DOJO no dia 4 de outubro para, no dia 11, realizarmos um Coding DOJO, organizado pelo PET, e aberto para todos programadores da PUCRS. Inscreva-se pelo e-mail <em>petinf.pucrs@gmail.com</em> até dia 10/10/13. Basta enviar seu nome, curso, matrícula e qual semestre estás cursando.</p>
+						<p>Data: 4 e 11/10/13</p>
+						<p>Local: sala 516 (FACIN)</p>
+						<p>Nos vemos lá!</p>
+					</div>
+				</div>
+			</article>
+			<article class="atividade">
+				<div id="videoaula_prezi">
+					<img src="imagens/atividades/videoaula_prezi.png" width="750" height="150">
+					<div class="atividade_texto">
+						<h3>Curso de Prezi</h3>
+						<p>Estão disponíveis no nosso site as vídeoaulas sobre a ferramenta Prezi, muito útil para apresentações.</p>
+						<p>Além de muito mais dinâmica que o PowerPoint, possui diversos outros recursos e sua apresentação fica armazenada na sua conta, podendo ser acessada de qualquer lugar.</p>
+						<p>São três vídeos e você pode encontrá-los no nosso canal no YouTube <a href="https://www.youtube.com/watch?v=9ekCKPJlL7w&list=PLAuwNKnnYHZFO9rU5Q0pVHx51qQLYPoc1&index=2">clicando aqui</a>.</p>
+					</div>
+				</div>
+			</article>
+			<article class="atividade">
+
+				<div id="videoaula_excel">
+					<img src="imagens/atividades/videoaula_excel.png" width="750" height="150">
+					<div class="atividade_texto">
+						<h3>Curso de Excel</h3>
+						<p>Em setembro de 2013, o PET Informática realizou um curso para auxiliar outros petianos da PUCRS no uso da ferramenta de planílhas Excel.</p>
+						<p>Foram preparadas sete apresentações e todas estão disponíveis no formato de vídeoaulas no nosso canal no YouTube.</p>
+						<p>Para assistir às video-aulas, <a href="https://www.youtube.com/watch?v=kTSa1PmfcKI&index=2&list=PLAuwNKnnYHZGK1zW4t7cMoFRKchijD9q2">clique aqui</a>.</p>
+					</div>
+				</div>
+			</article>
+			<article class="atividade">
+				<div id="videoaula_nuvem">
+					<img src="imagens/atividades/videoaula_nuvem.png" width="750" height="150">
+					<div class="atividade_texto">
+						<h3>Vídeoaulas sobre Armazenamento na Nuvem</h3>
+						<p>Vídeoaulas explicando o que é a nuvem, como armazenar arquivos nela e quais os sites mais indicados para isso. São apenas dois vídeos e você pode encontrá-los no nosso canal no YouTube.</p> 
+						<p>Para conferi-los, <a href="https://www.youtube.com/watch?v=Kz4bHITmwys&index=2&list=PLAuwNKnnYHZFgM-XjuDNUkc_sTxjckQ5R">clique aqui</a>.</p>
+					</div>
+				</div>
+			</article>
+			<article class="atividade">
+
+				<div id="conversando_tecnologia_set_2013">
+					<img src="imagens/atividades/conversando_tecnologia_set_2013.png" width="750" height="150">
+					<div class="atividade_texto">
+						<h3>Conversando sobre Tecnologia (Setembro)</h3>
+						<p>Organização de um momento para conversarmos e debatermos sobre diversos assuntos relacionados com os últimos lançamentos na área da informática.</p>
+						<p>Data: 4/11/2013</p>
+						<p>Horário: 14h</p>
+						<p>Local: sala 517 (prédio 32)</p>
+						<p>Ministrantes: Bruno Bulso e Rafael Furtado</p>
+					</div>
+				</div>
+			</article>
+			<article class="atividade">
+				<div id="jogo_promobio">
+					<img src="imagens/atividades/jogo_promobio.png" width="750" height="150">
+					<div class="atividade_texto">
+						<h3>Jogo Promobio</h3>
+						<p>O jogo Promobio foi desenvolvido com um propósito educacional. Para isto, foi ofertada ao PET Informática uma parceria com as Faculdades de Química e Biologia para o desenvolvimento de um jogo 3D com objetivo de inserir os jovens no mundo da sustentabilidade.</p>
+						<p> Além disso, o jogo apresenta conceitos, perguntas e soluções ligadas ao tema do projeto. Para isso, o Jogo Promobio está organizado no formato de uma cidade e nela são realizadas determinadas tarefas que estão espalhadas pelo mapa.</p>
+						<p>Para desenvolver o jogo foi utilizado o software Blender e a linguagem de programação Python. O Blender foi desenvolvido pela Blender Fundation e é um software de código aberto que serve para modelagem e animação, texturização, composição, renderização, motor de jogo, edição de vídeo e criação de aplicações interativas em 3D.</p>
+						<p>Três petianos foram encarregados de cuidadar do design gráfico e dois foram responsáveis pelo código e pela animação. O tempo para a finalização do jogo, entre o início do estudo e a apresentação do projeto, foi de, aproximadamente, oito meses.</p>
+					</div>
+				</div>
+			</article>
+			<article class="atividade">
+				<div id="nuvem_2012">
+					<img src="imagens/atividades/nuvem_2012.png" width="750" height="150">
+					<div class="atividade_texto">
+						<h3>Curso de Armazenamento em Nuvem</h3>
+						<p>Minicurso de armazenamento em nuvem organizado e ministrado pelo grupo PET-Informática tendo como público os outros grupos PET da universidade.</p>
+						<p>Data: 30/10/2012</p>
+						<p>Horário: 14h às 17h</p>
+						<p>Local: Prédio 32</p>
+						<p>Ministrantes: Gabriel Beck, Gustavo Vacilotto e Jovani Brasil</p>
+					</div>
+				</div>
+			</article>
+		</section>
+		<footer>
+			<div id ="menu_footer">
+				<nav>
+					<ul>
+						<li>
+							<a href="inicio.html">Página Inicial</a>
+						</li>
+						<li>
+							|
+						</li>
+						<li>
+							<a href="sobre.html">Sobre</a>
+						</li>
+						<li>
+							|
+						</li>
+						<li>
+							<a href="integrantes.html">Integrantes</a>
+						</li>
+						<li>
+							|
+						</li>
+						<li>
+							<a href="atividades.html">Atividades</a>
+						</li>
+						<li> 
+							|
+						</li>
+						<li>
+							<a href="http://www.inf.pucrs.br/">FACIN</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div id="endereco_footer">
+				<p>Av. Ipiranga, 6681 Partenon Porto Alegre/RS CEP: 90619-900 
+					<br>Prédio 32 Sala 701 Fone: (51) 3320-3558 Ramal: 6329
+					<br>© 2014 PET Informática PUCRS</p>
+			</div>
+			<div id="direitos_footer">
+				<p>Os logos e imagens utilizados no design são de propriedades dos seus respectivos donos.<p>
+			</div>
+			<div id="logo_pucrs">
+				<a href="http://pucrs.br/">
+					<img src="imagens/footer_pucrs.png">
+				</a>
+			</div>
+			<div id="social">
+				<ul>
+					<li><a href="https://www.facebook.com/petinf.pucrs"><img src="imagens/footer_facebook.png"></a></li>
+					<li><a href="https://www.youtube.com/user/petinfpucrs"><img src="imagens/footer_youtube.png"></a></li>
+				</ul>
+			</div>
+		</footer>
+		</div>
+		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'></script>
+			<script type="text/javascript">
+				if(document.URL.indexOf("nutri_intro") >= 0){ 
+					$(function(){
+					    $('html, body').animate({
+					        scrollTop: $('#nutri_intro').offset().top
+					    }, 1500);
+					    return false;
+					});
+				}
+				if(document.URL.indexOf("maio_2014") >= 0){ 
+					$(function(){
+					    $('html, body').animate({
+					        scrollTop: $('#maio_2014').offset().top
+					    }, 1500);
+					    return false;
+					});
+				}
+				if(document.URL.indexOf("selecao_20141") >= 0){ 
+					$(function(){
+					    $('html, body').animate({
+					        scrollTop: $('#selecao_20141').offset().top
+					    }, 1500);
+					    return false;
+					});
+				}
+
+			</script>
+		</script>	
+	</body>
+</html>

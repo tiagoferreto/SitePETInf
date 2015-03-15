@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="PT-BR">
+	<head>
+		<meta charset="UTF-8">
+		<!-- Adaptar a resolucao de dispositivos -->
+		<meta name="viewport" content="initial scale=1.0">
+		<title>PUCRS | PET Informática</title>
+		<!-- Icone da aba -->
+		<link href="imagens/favicon2.png" rel="shortcut icon" type="image/x-icon">
+		<!-- Fonte usada. Google Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'>
+		<!-- Referencia ao CSS -->
+		<link href="default.css" rel="stylesheet" type="text/css" media="all">
+	<script language="JavaScript1.2">
+	var howOften = 4; //numero de segundos para rotação
+	var current = 0; //contador da imagem
+	var ns6 = document.getElementById&&!document.all; //detect netscape 6
+
+	// arreio de imagens para serem rotacionadas
+	var items = new Array();
+    	items[0]="<a href='link.htm' ><img alt='image0 (9K)' src='imagens/capa/banner.png' width='1000' height='350' border='0' /></a>"; //a linked image
+    	items[1]="<a href='link.htm'><img alt='image1 (9K)' src='imagens/capa/numeros_terminal.png' height='350' width='1000' border='0' /></a>"; //a linked image
+    	items[2]="<a href='link.htm'><img alt='image2 (9K)' src='imagens/capa/canecas.png' height='350' width='1000' border='0' /></a>"; //a linked image
+    	items[3]="<a href='link.htm'><img alt='image3 (9K)' src='imagens/capa/livros.png' height='350' width='1000' border='0' /></a>"; //a linked image
+    	items[4]="<a href='link.htm'><img alt='image4 (9K)' src='imagens/capa/trabalhando.png' height='350' width='1000' border='0' /></a>"; //a linked image
+	function rotater() {
+    	document.getElementById("placeholder").innerHTML = items[current];
+    	current = (current==items.length-1) ? 0 : current + 1;
+    	setTimeout("rotater()",howOften*1000);
+	}
+
+	function rotater() {
+    	if(document.layers) {
+        	document.placeholderlayer.document.write(items[current]);
+        	document.placeholderlayer.document.close();
+    	}
+    	if(ns6)document.getElementById("placeholderdiv").innerHTML=items[current]
+        	if(document.all)
+            	placeholderdiv.innerHTML=items[current];
+
+    	current = (current==items.length-1) ? 0 : current + 1; //increment or reset
+    	setTimeout("rotater()",howOften*1000);
+	}
+	window.onload=rotater;
+	//-->
+</script>
+</head>
+	<body>
+		<div id="actualbody">
+		<!-- Cabecalho da pagina -->
+		<header>
+			<layer id="placeholderlayer"></layer><div id="placeholderdiv"></div>
+			<div id="titulo">
+				<h1>PET Informática</h1>
+				<p>Programa de Educação Tutorial da Faculdade de Informática da PUCRS</p>
+			</div>
+			<div id="titulo_sombra">
+				<h1>PET Informática</h1>
+				<p>Programa de Educação Tutorial da Faculdade de Informática da PUCRS</p>
+			</div>
+			<!-- Menu de navegacao -->
+			<div id="menu">
+				<nav>
+					<ul>
+						<li class="menu_atual"><a href="inicio.html">Página Inicial</a></li>
+						<li class="menu_outro"><a href="sobre.html">&nbsp;&nbsp;&nbsp;Sobre&nbsp;&nbsp;&nbsp;</a></li>
+						<li class="menu_outro"><a href="integrantes.html">&nbsp;Integrantes&nbsp;</a></li>
+						<li class="menu_outro"><a href="atividades.html">&nbsp;Atividades&nbsp;</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section>
+			<!-- Titulo do conteudo da pagina -->
+			<h2>Notícias em destaque</h2>
+			<article class="noticia">
+				<center>
+				<img src="imagens/noticias/selecao_20151.jpg" width="600" lenght="200">
+			</center>
+			</article>
+
+			<!-- Noticias principais. Todas pertencem a mesma classe -->
+
+<!--			<article class="noticia">
+				<img src="imagens/sele" width="200" lenght="200">
+				<div class="noticia_texto">
+					<h3>NutriMapa</h3>
+					<p>O PET-Inf e a nutrição estão desenvolvendo um aplicativos muito interessante para quem busca uma alimentação mais balanceada e saudável. Será desenvolvidos um dispositivo de busca onde o usuário procura a opção que melhor se encaixa a sua dieta.</p>
+				<a href="atividades.html#nutri_intro">Mais informações</a>
+				</div>
+			</article>
+
+			<article class="noticia">
+				<img src="imagens/noticias/maio_2014.png" width="200" lenght="200">
+				<div class="noticia_texto">
+					<h3>Círculo de Palestras: Maio</h3>
+					<p>O PET Informática realizará palestras sobre algoritmos genéticos, Phoneblocks, modelagem em 3D do Google SketchUp, entre outros.</p>
+					<p>Cada palestra tem duração aproximada de 15 minutos. Para assisti-las, basta comparecer à sala 516 nos dias 6 e 15 de maio às 15h.</p>
+				<a href="atividades.html#maio_2014">Mais informações</a>
+				</div>
+			</article>
+			<article class="noticia">
+				<img src="imagens/noticias/selecao_20141.png" width="200" lenght="200">
+				<div class="noticia_texto">
+					<h3>Vagas abertas (Encerrado)</h3>
+					<p>O PET está com vagas abertas para quem desejar participar do programa. São 9 bolsas disponíveis para os alunos de graduação dos cursos de Ciência da Computação, Engenharia da Computação e Sistemas de Informação.</p>
+					<p>Mande um e-mail até 10/03/2014 com seu nome, currículo com foto, curso e histórico escolar para <em>petinf.pucrs@gmail.com</em>.</p>
+					<a href="atividades.html#selecao_20141" id="mais_selecao_20141">Mais informações</a>
+				</div>
+			</article>
+-->
+		</section>
+		<footer>
+			<div id ="menu_footer">
+				<nav>
+					<ul>
+						<li>
+							<a href="inicio.html">Página Inicial</a>
+						</li>
+						<li>
+							|
+						</li>
+						<li>
+							<a href="sobre.html">Sobre</a>
+						</li>
+						<li>
+							|
+						</li>
+						<li>
+							<a href="integrantes.html">Integrantes</a>
+						</li>
+						<li>
+							|
+						</li>
+						<li>
+							<a href="atividades.html">Atividades</a>
+						</li>
+						<li> 
+							|
+						</li>
+						<li>
+							<a href="http://www.inf.pucrs.br/">FACIN</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div id="endereco_footer">
+				<p>Av. Ipiranga, 6681 Partenon Porto Alegre/RS CEP: 90619-900 
+					<br>Prédio 32 Sala 701 Fone: (51) 3320-3558 Ramal: 6329
+					<br>© 2014 PET Informática PUCRS</p>
+			</div>
+			<div id="direitos_footer">
+				<p>Os logos e imagens utilizados no design são de propriedades dos seus respectivos donos.<p>
+			</div>
+			<div id="logo_pucrs">
+				<a href="http://pucrs.br/">
+					<img src="imagens/footer_pucrs.png">
+				</a>
+			</div>
+			<div id="social">
+				<ul>
+					<li><a href="https://www.facebook.com/petinf.pucrs"><img src="imagens/footer_facebook.png"></a></li>
+					<li><a href="https://www.youtube.com/user/petinfpucrs"><img src="imagens/footer_youtube.png"></a></li>
+				</ul>
+			</div>
+		</footer>
+		</div>
+	</body>
+</html>

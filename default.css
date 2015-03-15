@@ -1,0 +1,413 @@
+/* Fonte do site */
+@import url(http://fonts.googleapis.com/css?family=Istok+Web);
+
+/* Classes do HTML */
+/* Geral */
+article, header ul, header li, header a {
+	font-size: 14px;
+}
+
+body {
+	background: #F1F1F1;
+}
+
+h2, h3 {
+	text-decoration: none;
+}
+
+h2 {
+	color: #334A94;
+}
+
+/* Menu */
+header ul {
+	list-style-type: none;
+	text-align: right;
+	padding-top: 15px;
+}
+
+header li {
+	display: inline;
+	/*margin-left: 25px;
+	margin-right: 25px;*/
+	padding: 14px 15px 15px 15px;
+}
+
+/* Corpo */
+.tutores a:link, .menu_outro a:link {
+	text-decoration: none;
+	color: #334A94;
+}
+
+.tutores a:hover {
+	text-decoration: none;
+	color: #4C63AD;
+}
+
+.tutores a:visited, .menu_outro a:visited {
+	color: #334A94;
+	text-decoration: none;
+}
+
+.tutores a:visited:hover, .menu_outro a:visited:hover {
+	text-decoration: none;
+	color: #4C63AD;
+}
+
+section p {
+	text-indent: 0.5cm;
+}
+
+section {
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+/* Artigo */
+article {
+	margin-bottom: 50px;
+	text-align: justify;
+}
+
+article ul {
+	list-style-type: none;
+}
+
+/* Footer */
+footer {
+	background-color: #334A94;
+	width: 1000px;
+	padding: 10px 0px 10px 0px;
+	font-size: 12px;
+	position: absolute;
+}
+
+footer a {
+	text-decoration: none;
+	color: #657196;
+}
+
+footer a:link {
+	text-decoration: none;
+	color: #657196;
+}
+
+footer a:hover {
+	text-decoration: underline;
+	color: #657196;
+}
+
+footer a:visited{
+	color: #657196;
+	text-decoration: none;
+}
+
+footer a:visited:hover {
+	text-decoration: none;
+	color: #657196;
+}
+
+footer li {
+	list-style: none;
+	display: inline;
+}
+
+/* Classes */
+/* Geral */
+.indisponivel, .indisponivel:hover {
+ 	color: #C0C0C0;
+}
+
+/* Menu */
+.menu_atual {
+	text-decoration: none;
+	background: #334A94;
+
+}
+
+.menu_atual a:link, .menu_atual a:hover, .menu_atual a:visited, .menu_atual a:visited:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.menu_outro a:hover {
+	text-decoration: none;
+	color: #495D9E;
+}
+
+
+/* Noticias */
+.noticia {
+/*	height: 250px; */
+	background: #556DBC;
+	opacity: 1;
+}
+
+.noticia:hover {
+	opacity: 0.9;
+}
+
+.noticia a, .atividade a, .noticia a:visited, .atividade a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+.noticia a:hover, .atividade a:hover, .noticia a:visited:hover, .atividade a:visited:hover {
+	opacity: 1;
+	text-decoration: underline;
+}
+
+.noticia img {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: 25px;
+}
+
+.noticia_texto {
+	margin-top: -250px;
+	margin-left: 250px;
+	margin-right: 25px;
+}
+
+/* Sobre o PET */
+.citacao {
+	font-style: italic;
+	text-align: right;
+	margin-right: 10px;
+}
+
+.tutores p {
+	display: inline;
+	text-indent: 0cm;
+	position: absolute;	
+	margin-top: 0px;
+}
+
+/* Integrantes */
+.integrantes {
+	height: 150px;
+	width: 395px;
+	background: #556DBC;
+	opacity: 1;
+	position: absolute;
+}
+
+/*.part_foto {
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+}*/
+
+.integrantes:hover {
+	opacity: 0.9;
+}
+
+.integrantes img {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.integrantes h3, .noticia h3, .atividade h3 {
+	color: #FFFFFF;
+}
+
+.integrantes p, .ex_integrantes p {
+	text-indent: 0cm;
+}
+
+.ex_integrantes h3 {
+	color: #334A94;
+}
+
+.integrantes_texto {
+	margin-top: -160px;
+	margin-left: 130px;
+	margin-right: 25px;
+}
+
+.integrantes_curso {
+	margin-top: -20px;
+}
+
+/* Atividades */
+.atividade {
+	height: relative;
+	background: #556DBC;
+	opacity: 1;
+}
+
+.atividade:hover {
+	opacity: 0.9;
+}
+
+.atividade_texto {
+	margin-top: -30px;
+	margin-left: 25px;
+	margin-right: 25px;
+	padding-bottom: 6px;
+}
+
+.atividade img {
+	margin-top: 25px;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-bottom: 25px;
+}
+
+/* IDs do HTML */
+/* Geral */
+#actualbody {
+	background: #FFFFFF;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -10px;
+	margin-bottom: -10px;
+	text-decoration: none;
+	font-family: 'Istok Web';
+}
+
+#img_cabecalho {
+	float: center;
+}
+
+#titulo {
+	margin-top: -118px;
+	margin-left: 22px;
+	color: #000000;
+	opacity: 0.8;
+
+}
+
+#titulo p {
+	margin-top: -30px;
+	margin-bottom: 28px;
+}
+
+#titulo_sombra {
+	margin-top: -112px;
+	margin-left: 20px;
+	color: #FFFFFF;
+	position: absolute;
+}
+
+#titulo_sombra p {
+	margin-top: -30px;
+	margin-bottom: 28px;
+	color: #F4F4F4;
+}
+
+#menu {
+	background: #FFFFFF;
+	height: 50px;
+	width: 100%;
+}
+
+/* Footer */
+#logo_pucrs {
+	margin-left: 30px;
+	margin-top: -70px;
+	margin-bottom: 60px;
+}
+
+#logo_pucrs img {	
+	opacity: 0.5;
+}
+
+#logo_pucrs img:hover {
+	opacity: 0.9;
+}
+
+#menu_footer {
+	margin-left: 90px;
+	margin-top: 20px;
+	color: #657196;
+}
+
+#endereco_footer {
+	margin-top: 0px;
+	margin-left: 130px;
+}
+
+#direitos_footer {
+	font-size: 10px;
+	margin-left: 130px;
+}
+
+#social {
+	margin-left: 800px;
+	margin-top: -127px;
+	margin-bottom: 80px;
+}
+
+#social li {
+	margin-right: 20px;
+	opacity: 0.5;
+}
+
+#social li:hover {
+	opacity: 0.9;
+}
+
+/* Sobre o PET */
+#alvaro_guarda {
+
+}
+
+#afonso_orth {
+	padding-left: 327px;
+}
+
+#fabiano_passuelo {
+	padding-left: 621px;
+}
+#luis_lamb {
+	padding-top: 100px;
+}
+
+#lucia_giraffa {
+	padding-left: 327px;
+}
+
+#alfio_martini {
+	padding-left: 621px;
+}
+
+#celso_maciel {
+	padding-top: 100px;
+}
+
+#thiago_ferreto {
+	padding-left: 327px;
+	padding-bottom: 80px;
+}
+
+/* Integrantes */
+#gustavo_francisco {
+
+}
+
+#helio_fuques {
+	padding-left: 405px;
+}
+
+#joao_fanti {
+	padding-top: 160px;
+}
+
+#joice_marek {
+	padding-left: 405px;
+}
+
+#paola_weirich {
+	padding-top: 160px;
+}
+
+#pedro_berta {
+	padding-left: 405px;
+	padding-bottom: 185px;
+}
