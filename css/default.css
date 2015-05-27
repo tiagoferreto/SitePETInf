@@ -1,0 +1,24 @@
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+    font-family: 'zocial', sans-serif;
+}
+
+body { padding-top: 50px; }
+.social{
+    position: relative;
+    top: 40px;
+}
+
+.social>a{
+    text-decoration: none;
+    color: #9d9d9d;
+}
+
+.zocial-facebook:hover{
+    color: rgb(58, 87, 149);
+}
+.zocial-youtube:hover{
+    color: rgb(204, 24, 30);
+}
